@@ -1,0 +1,17 @@
+{
+        "name": "tally-hello-badge-1-text-and-attribute"
+    ,   "description": "Hello Badge example #1: Demonstrates the data-tally-text and data-tally-attribute attributes."
+    ,   "version": "0.0.1"
+    ,   "author": "Aral Balkan <aral@aralbalkan.com>"
+    ,   "dependencies": {
+                "express": "3.0.x"
+            ,   "tally": "*"
+        }
+    ,   "devDependencies": {
+           "coffee-script": "1.6.1"
+        }
+    ,   "license": "MIT"
+    ,   "engines": {
+            "node": "0.8.x"
+        }
+}

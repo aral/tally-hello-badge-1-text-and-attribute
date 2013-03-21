@@ -1,0 +1,50 @@
+################################################################################
+#
+# Tally App.net posts example (with timer profiling)
+#
+# Displays the global timeline from App.net and profiles the template render.
+#
+# Copyright © 2013, Aral Balkan.
+# Released under the MIT license. (http://opensource.org/licenses/MIT)
+#
+################################################################################
+
+superagent = require 'superagent'
+timer = require '../lib/timer.coffee'
+
+exports.route = (request, response) ->
+
+    # Time the data call
+    timer.reset()
+
+    superagent.get('https://alpha-api.app.net/stream/0/posts/stream/global')
+
+        .end (error, globalTimelineResponse) ->
+
+            timer.elapsedTime('Data transfer from App.net')
+
+            # Attach a custom function to the data to count the number of posts
+            globalTimelineResponse.body.numberOfPosts = ->
+                if this.data
+                    return this.data.length
+                else
+                    return 0
+
+            globalTimeline = globalTimelineResponse.body
+
+            # Handle network and App.net errors gracefully.
+            if error
+                # There was a network error
+                globalTimeline.errorType = 'Network'
+                globalTimeline.error = error
+
+            else if not globalTimeline.data
+
+                # There was an App.net error
+                globalTimeline.errorType = 'App.net'
+                globalTimeline.error = "(##{globalTimeline.meta.code}) #{globalTimeline.meta.error_message}"
+
+            # Time the template render
+            timer.reset()
+            response.render 'posts', globalTimeline
+            timer.elapsedTime('Template render')

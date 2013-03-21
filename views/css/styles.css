@@ -1,0 +1,38 @@
+body { text-align: center; }
+
+a { text-decoration: none; }
+
+p
+{
+	font-family: Georgia, serif;
+	font-size: 3em; 					/* 48px / 16px */
+	border: .208333333em solid #eb1c23; /* 10px / 48px */
+	border-radius: .416666667em; 		/* 20px / 48px */
+	padding: .25em;
+	margin: 2em auto; 					/* 96px / 48px */
+	width: 90%;
+	max-width: 8.333333333em; 			/* 400px / 48px */
+	min-width: 6.25em; 					/* 300px / 48px */
+	background-color: #eb1c23;
+	color: white;
+	box-shadow: .104166667em .104166667em .104166667em #ccc;	/* 5px / 48px */
+}
+
+[data-tally-text='name']
+{
+	display: block;
+	word-wrap: break-word;				/* So long names don’t break out of the tag. */
+	font-family: 'Marker Felt', 'Comic Sans', sans-serif;
+	font-size: 2em;						/* 96px / 16px */
+	padding: 0.5em 0;					/* 48px / 96px */
+	margin-top: .125em; 				/* 12px / 96px */
+	text-align:center;
+	background-color: white;
+	color: #252525;
+}
+
+@media only screen and (max-width: 400px)
+{
+	body { font-size: .6875em; }		/* Scale everything down a little. (11px / 16px) */
+	p { margin: 1em auto; }				/* Optical tweak: scale vertical margins disproportionately. */
+}
