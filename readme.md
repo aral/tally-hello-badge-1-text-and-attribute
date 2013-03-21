@@ -1,6 +1,6 @@
 <img src='http://aralbalkan.com/images/tally-hello-world.png'>
 
-Tally: Hello, world!
+Tally: Hello badge
 ===
 
 This is a very simple example for the [Tally template engine](http://tally.jit.su) ([Fork Tally on GitHub](https://github.com/aral/tally)).
