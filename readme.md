@@ -3,7 +3,7 @@
 Tally: Hello badge example (part 1 of 4)
 ===
 
-This is a very simple example for the [Tally template engine](http://tally.jit.su) ([Fork Tally on GitHub](https://github.com/aral/tally)).
+This is a very simple example for the [Tally template engine](http://tally.jit.su) ([fork Tally on GitHub](https://github.com/aral/tally)).
 
 It demonstrates how to set up Tally for use with [Express 3](http://expressjs.com) and how to use the ```data-tally-text``` and ```data-tally-attribute``` attributes to set the value of the text and attribute of a DOM element.
 
