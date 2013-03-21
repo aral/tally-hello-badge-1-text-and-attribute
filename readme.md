@@ -71,7 +71,7 @@ That’s it!
 
 Unlike other unobtrusive frameworks like Plates and Notemplate, Tally has no mapping code to write. It just works.
 
-Continue learning about tally in [Part 2: Repetition](https://github.com/aral/tally-hello-badge-2-repetition).
+Continue learning about Tally in [Part 2: Repetition](https://github.com/aral/tally-hello-badge-2-repetition).
 
 Table of Contents
 ---
