@@ -11,8 +11,12 @@ Usage
 ---
 
 1. Clone the repository.
-2. Run server.coffee (I use ```nodemon server.coffee``` while developing. Or you can just run ```coffee server.coffee```). Once the server is running, go to ```http://localhost:3000``` to see the example and ```http://localhost:3000/hello-badge.html``` to see the template source.
-3. Read the notes below and take a peek at the source code.
+2. Run ```npm install``` to install the dependencies.
+2. Run ```npm start``` to start the server.
+
+Once the server is running, go to ```http://localhost:3000``` to see the example and ```http://localhost:3000/hello-badge.html``` to see the template source.
+
+Read the notes below to find out how it works and take a peek at the source code.
 
 How it works
 ---
