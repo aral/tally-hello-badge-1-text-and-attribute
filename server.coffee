@@ -1,8 +1,8 @@
 express = require 'express'
-tally = require 'tally'
+set = require 'indie-set'
 
 app = express()
-app.engine 'html', tally.__express
+app.engine 'html', set.__express
 app.set 'view engine', 'html'
 app.use express.static('views')
 

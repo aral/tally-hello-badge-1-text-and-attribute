@@ -18,7 +18,7 @@ p
 	box-shadow: .104166667em .104166667em .104166667em #ccc;	/* 5px / 48px */
 }
 
-[data-tally-text='name']
+[data-set-text='name']
 {
 	display: block;
 	word-wrap: break-word;				/* So long names don’t break out of the tag. */
